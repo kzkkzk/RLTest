@@ -44,16 +44,15 @@ address {font-style: normal;}
 
 /* CONTENT */
 
+.content{ width: 100%; min-height: 232px;}
+.GTop{    width: 100%; height: 116px; background-color: #d97a7e;}
+.GBottom{ width: 100%; left:0; right: 0; top: 116px; bottom:65px; position: absolute; background-color: #d8666c;}
 
 .tlc,
-.trc{ height: 116px; display: inline-block;}
-.blc,
-.brc{ height: 100%; display: inline-block;}
+.blc{ height: 100%; display: inline-block;}
 
-.tlc{ width: 35%; background-color: #c6383f;}
-.blc{ width: 75%; background-color: #d97a7e;}
-.trc{ width: 65%; background-color: #c51b24;}
-.brc{ width: 25%; background-color: #d8666c;}
+.tlc{ width: 25%; height: 0; border-bottom: 116px solid #c6383f; border-right: 114px solid transparent;}
+.blc{             height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent;}
 
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c;}
@@ -64,7 +63,7 @@ address {font-style: normal;}
 
 .promokey{ margin-top: 13px; position: absolute; right: 170px;}
 .promokey p{ margin-top: 10px; margin-left: 4px; font-family: "13184"; font-size: 10px; color: white;}
-.promokey input{ height: 14px; border: 2px solid #3c3c3d; border-radius: 2px; background-color: #1c1c1c; font-family: "13184"; font-size: 10px; color: white;}
+.promokey input{ width: 155px; height: 14px; border: 2px solid #3c3c3d; border-radius: 2px; background-color: #1c1c1c; font-family: "13184"; font-size: 10px; color: white;}
 
 .logo{ width: 75px; height: 100%; right: 0; top: 0; position: absolute;}
 .logo img{ top: 9px; right: 28px; position: absolute;}
