@@ -44,8 +44,27 @@ address {font-style: normal;}
 
 /* CONTENT */
 
+
+.tlc,
+.trc{ height: 116px; display: inline-block;}
+.blc,
+.brc{ height: 100%; display: inline-block;}
+
+.tlc{ width: 35%; background-color: #c6383f;}
+.blc{ width: 75%; background-color: #d97a7e;}
+.trc{ width: 65%; background-color: #c51b24;}
+.brc{ width: 25%; background-color: #d8666c;}
+
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c;}
 
-.footer ul{ border: 1px solid white;}
-.footer ul li{ font-family: "Georgia"; font-size: 12px; font-style: italic;  color: white; text-decoration: underline; display: inline-block;}
+.footer ul{ position: absolute; top: 20px; left: 90px;}
+.footer ul li{ margin-right: 45px; display: inline-block;}
+.footer ul li a{ font-family: "Georgia"; font-size: 12px; font-style: italic;  color: white; text-decoration: underline;}
+
+.promokey{ margin-top: 13px; position: absolute; right: 170px;}
+.promokey p{ margin-top: 10px; margin-left: 4px; font-family: "13184"; font-size: 10px; color: white;}
+.promokey input{ height: 14px; border: 2px solid #3c3c3d; border-radius: 2px; background-color: #1c1c1c; font-family: "13184"; font-size: 10px; color: white;}
+
+.logo{ width: 75px; height: 100%; right: 0; top: 0; position: absolute;}
+.logo img{ top: 9px; right: 28px; position: absolute;}
