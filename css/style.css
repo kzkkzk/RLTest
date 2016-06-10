@@ -51,8 +51,8 @@ address {font-style: normal;}
 .tlc,
 .blc{ height: 100%; display: inline-block;}
 
-.tlc{                   height: 0; border-bottom: 0 solid #c6383f; border-right: 114px solid transparent;}
-.blc{ min-width: 90px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent;}
+.tlc{                  height: 0; border-bottom: 116px solid #c6383f; border-right: 114px solid transparent;}
+.blc{ min-width: 114px; height: 0; border-bottom: 0     solid #c51b24; border-right: 114px solid transparent;}
 
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c;}
