@@ -11,7 +11,7 @@
 }
 /* GLOBAL */
 html,
-body {height: 100%; min-height: 100%; width: 100%; min-width: 980px; background-color: #ffffff;}
+body {height: 100%; min-height: 100%; width: 100%; min-width: 810px; background-color: #ffffff;}
 body {color: #000;font: 14px/16px 'sochi_light',sans-serif;margin: 0;padding: 0;}
 h1,h2,h3,h4,h5,h6,p,span{ margin: 0; padding: 0; font-weight: normal;}
 ul, ol, p,span { margin: 0; padding: 0;list-style: none;}
@@ -46,13 +46,13 @@ address {font-style: normal;}
 
 .content{ width: 100%; min-height: 232px;}
 .GTop{    width: 100%; height: 116px; background-color: #d97a7e;}
-.GBottom{ width: 100%; left:0; right: 0; top: 116px; bottom:65px; position: absolute; background-color: #d8666c;}
+.GBottom{ width: 100%; left:0; right: 0; top: 116px; bottom:65px; position: absolute; background-color: #d8666c; overflow: hidden;}
 
 .tlc,
 .blc{ height: 100%; display: inline-block;}
 
-.tlc{ width: 25%; height: 0; border-bottom: 116px solid #c6383f; border-right: 114px solid transparent;}
-.blc{             height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent;}
+.tlc{                   height: 0; border-bottom: 0 solid #c6383f; border-right: 114px solid transparent;}
+.blc{ min-width: 90px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent;}
 
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c;}
