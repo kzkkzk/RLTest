@@ -8,7 +8,7 @@ var resize_blc = function(){
 
     $('.content').css('height', $(window).height()- 65 +'px');
 
-    var gtop_height   = gtop_element.height();                                   /* Высота нижнего div'a */
+    var gtop_height   = gtop_element.height();                                   /* Высота верхнего div'a */
     var gbottom_height= gbottom_element.height();                                /* Высота нижнего div'a */
 
     var d_main_diamond = $(window).height()- $('.footer').height() - 60;         /*Диагональ ромба (60 - толщина бордер 30*20)*/
@@ -25,7 +25,7 @@ var resize_blc = function(){
     diamond_element.css( 'height', diamond_element.width());
 
 
-    diamond_element.css( {'left': (d_main_diamond - w_main_diamond) /2 + 12 + tlc_element.width(), 'top': (d_main_diamond - w_main_diamond) /2 + 12});
+    diamond_element.css( {'left': (d_main_diamond - w_main_diamond) /2 + tlc_element.width(), 'top': (d_main_diamond - w_main_diamond) /2 + 12});
 
 };
 

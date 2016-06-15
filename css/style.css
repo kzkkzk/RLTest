@@ -45,8 +45,8 @@ address {font-style: normal;}
 /* CONTENT */
 
 .content{ width: 100%; overflow: hidden;}
-.GTop{    width: 100%; height: 30%; background-color: #d97a7e;}
-.GBottom{ width: 100%; height: 70%; background-color: #d8666c; overflow: hidden;}
+.GTop{    width: 100%; height: 25%; background-color: #d97a7e;}
+.GBottom{ width: 100%; height: 75%; background-color: #d8666c; overflow: hidden;}
 
 .tlc,
 .blc{ height: 100%; display: inline-block;}
