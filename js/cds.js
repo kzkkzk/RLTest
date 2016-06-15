@@ -4,9 +4,6 @@ var blc_element     = $(".blc");
 var tlc_element     = $(".tlc");
 var diamond_element = $(".main_diamond");
 
-var tlc_element_wb = tlc_element.css('border-right-width').replace('px','');     /* Толщина правой рамки верхнего div'a */
-var blc_element_wb = blc_element.css('border-right-width').replace('px','');     /* Толщина правой рамки нижнего div'a */
-
 var resize_blc = function(){
 
     $('.content').css('height', $(window).height()- 65 +'px');
@@ -27,8 +24,8 @@ var resize_blc = function(){
     diamond_element.css( 'width',  w_main_diamond + 'px');
     diamond_element.css( 'height', diamond_element.width());
 
-    diamond_element.css( {'left': (d_main_diamond - w_main_diamond) /2 + 12 + tlc_element.width(), 'top': (d_main_diamond - w_main_diamond) /2 + 12} );
 
+    diamond_element.css( {'left': (d_main_diamond - w_main_diamond) /2 + 12 + tlc_element.width(), 'top': (d_main_diamond - w_main_diamond) /2 + 12});
 
 };
 
