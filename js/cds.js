@@ -20,11 +20,16 @@ var resize_blc = function(){
    /* var d_main_diamond = square_element.height()- (diamond_element.css( 'border-width').replace('px', '') * 2);  /*Диагональ ромба*/
   /*  var w_main_diamond = d_main_diamond / Math.sqrt(2);                                                          /*Сторона ромба*/
 
-    var d_diamond= square_element.height() * Math.sqrt(2);
 
-    var diamond_delta= (d_diamond - square_element.height())/2 - (diamond_element.css( 'border-width').replace('px', '') * 2);
+ /*   var d_diamond= square_element.height() - (diamond_element.css( 'border-width').replace('px', '') * 2); */
 
-    diamond_element.css({ 'top': diamond_delta, 'left': diamond_delta, 'right': diamond_delta, 'bottom': diamond_delta,});
+    var d_diamond = square_element.height();
+    var w_diamond = d_diamond / Math.sqrt(2);
+    var delta_diamond = (square_element.height() - w_diamond)/2;
+
+    diamond_element.css({ 'left': delta_diamond, 'top': delta_diamond, 'right': delta_diamond, 'bottom': delta_diamond});
+
+
 
 
 /*    diamond_element.css( {'width': w_main_diamond, 'height': w_main_diamond});

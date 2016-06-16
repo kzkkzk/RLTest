@@ -11,7 +11,7 @@
 }
 /* GLOBAL */
 html,
-body {height: 100%; min-height: 100%; width: 100%; min-width: 810px; min-height: 395px; background-color: #ffffff;}
+body {height: 100%; min-height: 100%; width: 100%; min-width: 660px; min-height: 465px; background-color: #ffffff;}
 body {color: #000;font: 14px/16px 'sochi_light',sans-serif;margin: 0;padding: 0;}
 h1,h2,h3,h4,h5,h6,p,span{ margin: 0; padding: 0; font-weight: normal;}
 ul, ol, p,span { margin: 0; padding: 0;list-style: none;}
@@ -29,7 +29,7 @@ select {font: 13px/18px Arial,Verdana,sans-serif;color:#000; outline: none;}
 address {font-style: normal;}
 /* FIX */
 .clear {clear:both;}
-.clearfix:after {clear: both;content: "";display: block;height: 0;}
+.clearfix:after {clear: both;content: "";display: block; height: 0;}
 .zfix {overflow: hidden;}
 .tfix {display: table;}
 .ctr-wrap {margin: auto;overflow: hidden;position: relative;text-align: center;width: 100%;}
@@ -52,15 +52,15 @@ address {font-style: normal;}
 .blc{ height: 100%; display: inline-block;}
 
 .tlc{                   height: 0; border-bottom: 0 solid #c6383f; border-right: 114px solid transparent; position: relative;}
-.blc{ min-width: 260px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent; position: relative;}
+.blc{ min-width: 0px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent; position: relative;}
 
-.main_diamond{ border: 30px solid #de1a25; z-index: 1; position: absolute;
+.main_diamond{ border: 30px solid #de1a25; z-index: 1; position: absolute; margin: 0 auto;
     -moz-transform: rotate(45deg);  /* Firefox */
     -o-transform: rotate(45deg);  /* Opera */
     -webkit-transform: rotate(45deg);  /* Safari y Chrome */
 }
 
-.main_square{ width: 100%; height: 100%; position: relative; margin: 0 auto; border: 1px solid black;}
+.main_square{ width: 100%; height: 100%; position: relative; margin: 0 auto;}
 
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c; z-index: 2;}
@@ -80,3 +80,4 @@ address {font-style: normal;}
 /*—À”∆≈¡Õ€≈  À¿——€ ƒÀﬂ Œ“À¿ƒ »*/
 .test{ position: fixed;}
 .info{ padding: 60px 60px; font-size: 15px;}
+.brd{ border: 1px solid black;}
