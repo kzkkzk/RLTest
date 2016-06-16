@@ -1,11 +1,14 @@
+var square_element  = $('.main_square');
+var diamond_element = $(".main_diamond");
+
+
 var gtop_element    = $('.GTop');
 var gbottom_element = $('.GBottom');
 var blc_element     = $(".blc");
 var tlc_element     = $(".tlc");
-var diamond_element = $(".main_diamond");
+
 var footer_element  = $('.footer');
 var content_element = $('.content');
-var square_element  = $('.main_square');
 
 var resize_blc = function(){
 
@@ -14,8 +17,15 @@ var resize_blc = function(){
     square_element.css('height', content_element.height() + 20);
     square_element.css('width',  square_element.height());
 
-    var d_main_diamond = square_element.height()- (diamond_element.css( 'border-width').replace('px', '') * 2);  /*Диагональ ромба*/
-    var w_main_diamond = d_main_diamond / Math.sqrt(2);                                                           /*Сторона ромба*/
+   /* var d_main_diamond = square_element.height()- (diamond_element.css( 'border-width').replace('px', '') * 2);  /*Диагональ ромба*/
+  /*  var w_main_diamond = d_main_diamond / Math.sqrt(2);                                                          /*Сторона ромба*/
+
+    var d_diamond= square_element.height() * Math.sqrt(2);
+
+    var diamond_delta= (d_diamond - square_element.height())/2 - (diamond_element.css( 'border-width').replace('px', '') * 2);
+
+    diamond_element.css({ 'top': diamond_delta, 'left': diamond_delta, 'right': diamond_delta, 'bottom': diamond_delta,});
+
 
 /*    diamond_element.css( {'width': w_main_diamond, 'height': w_main_diamond});
 

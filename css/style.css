@@ -54,7 +54,7 @@ address {font-style: normal;}
 .tlc{                   height: 0; border-bottom: 0 solid #c6383f; border-right: 114px solid transparent; position: relative;}
 .blc{ min-width: 260px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent; position: relative;}
 
-.main_diamond{ border: 30px solid #de1a25; z-index: 1; position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+.main_diamond{ border: 30px solid #de1a25; z-index: 1; position: absolute;
     -moz-transform: rotate(45deg);  /* Firefox */
     -o-transform: rotate(45deg);  /* Opera */
     -webkit-transform: rotate(45deg);  /* Safari y Chrome */
