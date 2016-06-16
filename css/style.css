@@ -54,11 +54,13 @@ address {font-style: normal;}
 .tlc{                   height: 0; border-bottom: 0 solid #c6383f; border-right: 114px solid transparent; position: relative;}
 .blc{ min-width: 260px; height: 0; border-bottom: 0 solid #c51b24; border-right: 114px solid transparent; position: relative;}
 
-.main_diamond{ min-width: 330px; min-height: 330px; border: 30px solid #de1a25; z-index: 1; margin: 0 auto; position: relative;
+.main_diamond{ border: 30px solid #de1a25; z-index: 1; position: absolute; left: 0; right: 0; top: 0; bottom: 0;
     -moz-transform: rotate(45deg);  /* Firefox */
     -o-transform: rotate(45deg);  /* Opera */
     -webkit-transform: rotate(45deg);  /* Safari y Chrome */
 }
+
+.main_square{ width: 100%; height: 100%; position: relative; margin: 0 auto; border: 1px solid black;}
 
 /* FOOTER */
 .footer{ width: 100%; height: 65px; bottom: 0; left:0; position: absolute; background-color: #2a2a2c; z-index: 2;}

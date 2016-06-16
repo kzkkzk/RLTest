@@ -5,18 +5,22 @@ var tlc_element     = $(".tlc");
 var diamond_element = $(".main_diamond");
 var footer_element  = $('.footer');
 var content_element = $('.content');
+var square_element  = $('.main_square');
 
 var resize_blc = function(){
 
     content_element.css('height', $(window).height()- footer_element.height() +'px');
 
-    var d_main_diamond = content_element.height()- (diamond_element.css( 'border-width').replace('px', '') * 2);  /*Диагональ ромба*/
+    square_element.css('height', content_element.height() + 20);
+    square_element.css('width',  square_element.height());
+
+    var d_main_diamond = square_element.height()- (diamond_element.css( 'border-width').replace('px', '') * 2);  /*Диагональ ромба*/
     var w_main_diamond = d_main_diamond / Math.sqrt(2);                                                           /*Сторона ромба*/
 
-    diamond_element.css( {'width': w_main_diamond, 'height': w_main_diamond});
+/*    diamond_element.css( {'width': w_main_diamond, 'height': w_main_diamond});
 
     var mt = (content_element.height() - w_main_diamond) /2 - 17; /*Значение margin-top для ромба*/
-    diamond_element.css( 'margin-top',  mt + 'px');
+    /*    diamond_element.css( 'margin-top',  mt + 'px');
 
     gtop_element.css('height', diamond_element.width()/ 2 - 30 + 'px');
 
@@ -29,7 +33,7 @@ var resize_blc = function(){
 
     var gtop_height   = gtop_element.height();                                   /* Высота верхнего div'a */
     /*   var gbottom_height= gbottom_element.height();                                /* Высота нижнего div'a */
-    tlc_element.css( 'border-width', gtop_height    + 'px');
+    /*    tlc_element.css( 'border-width', gtop_height    + 'px');
 
     var tlc_delta = (Math.sqrt( Math.pow(w_main_diamond / 2, 2) - Math.pow(gtop_height, 2))+ 60);
 
